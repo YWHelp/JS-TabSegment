@@ -1,0 +1,77 @@
+/*去掉系统自带的一些边距*/
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var{
+    margin:0;
+    padding: 0;
+}
+
+ul{
+    /*去掉列表前面的点*/
+    list-style: none;
+}
+
+a {
+    /*去掉标签下面的线*/
+    text-decoration: none;
+    /*文本颜色*/
+    color: black;
+}
+
+body{
+
+    margin: 50px;
+}
+
+#tab{
+
+    width: 498px;
+    height: 120px;
+    border: 1px solid #eaeaea;
+}
+
+#tab-header{
+    background-color: #F7F7F7;
+    height: 40px;
+    line-height: 40px;
+    /*文字居中*/
+    text-align: center;
+    position: relative;
+}
+
+#tab-header ul{
+    width: 501px;
+    position: relative;
+    left: -1px;
+}
+
+#tab-header ul li{
+    /*左边悬浮*/
+    float: left;
+    width: 98px;
+    /*设置内边距*/
+    padding: 0px 1px;
+    border-bottom: 1px solid #eaeaea;
+}
+#tab-header ul li.selected{
+    background-color: white;
+    color: #FF5500;
+    /*内填充*/
+    padding: 0px;
+    /*设置左右分割线*/
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    /*去掉下边线*/
+    border-bottom: 0;
+}
+
+#tab-content .sub-content{
+    /*隐藏字内容标签*/
+    display: none;
+}
+
+#tab-content .sub-content a{
+    width: 220px;
+    /*左浮动*/
+    float: left;
+    /*外边距*/
+    margin: 8px;
+}
